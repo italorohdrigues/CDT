@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+  <script src="js/contador.js"></script>
+  <title>How Many People Have Died From Cannabis?</title>
+</head>
+
+<body onload="start();">
+  <header id="hero">
+    <div class="header-text">
+      <p class="primary-text">A live tracker from 8000 BC to today</p>
+      <h1 class="primary-h1">How Many People Have Died From Cannabis?</h1>
+    </div>
+
+    <div id="contador"></div>
+
+    <div class="share">
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+        data-show-count="false">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    <div class="update">
+      <script language=javascript type="text/javascript">
+        dayName = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+        // nName = new Array("1st", "2nd", "3rd", "4th",	"5th", "6th", "7th", "8th", "9th", "10th", "12th", "13th", "14th", "15th", "16th", "17th", "18th", "19th", "20th", "21st", "22nd", "23rd", "24th", "25th", "26th", "27th", "28th", "29th", "30th", "31st")
+        monName = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+        now = new Date
+
+        document.write("<p> Last update: " + dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear() + ". </p>")
+      </script>
+    </div>
+  </header>
+
+
+</body>
+
+</html>
