@@ -126,6 +126,10 @@ h1 {
     100% {transform: translateY(40vh);}
   }
   
+  .update {
+    top: 29%;
+  }
+
   #contador {
   position: relative;
   color: #fff;
@@ -199,3 +203,5 @@ h1 {
   visibility: hidden;
 }
 }
+
+/* just to update */
