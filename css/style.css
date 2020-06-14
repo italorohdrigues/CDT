@@ -69,16 +69,18 @@ h1 {
   color: #fff;
   font-size: 10em;
   animation-name: contador;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   visibility: hidden;
 }
 
 @keyframes contador {
-  0% { visibility: hidden; transform: translateY(25vh); }
+  0% { visibility: hidden; opacity: 0%; transform: translateY(25vh); }
 
-  100% { visibility: visible; transform: translateY(32vh);}
+  50% { visibility: visible; opacity: 50%;}
+
+  100% { visibility: visible; opacity: 100%; transform: translateY(32vh);}
 }
 
 .share {
@@ -99,6 +101,7 @@ h1 {
   animation-delay: 6.5s;
   animation-fill-mode: forwards;
 }
+
 
 @keyframes update {
   0% {opacity: 0%;}
